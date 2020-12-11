@@ -25,7 +25,14 @@ class App extends React.Component {
               <div className='container'>
                   <header>
                       <div className='wrapper'>
-                          <span>React and Contentful</span>
+                      <Nav />
+                        <Switch>
+                        <Route path="/" exact component={Home} />  
+                        <Route path="/About" component={About} />
+                        <Route path="/Shop" component={Shop} />
+                        <Route path="/Prices" component={Prices} />
+                        <Redirect to="/" /> 
+                        </Switch>
                       </div>
                   </header>
                   <main>
