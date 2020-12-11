@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {client} from './components/client';
 import Posts from './components/Posts';
+import Shop from './components/Shop';
 
 class App extends React.Component {
   state = {

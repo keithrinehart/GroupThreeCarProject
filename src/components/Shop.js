@@ -1,11 +1,17 @@
-import React from 'react';
+import React from 'react'
 
-export default class Shop extends Component {
-    render() {
-        return (
-            <div>
-                <h1>Hello World</h1>
-            </div>
-        )
-    }
+
+function Shop() {
+    return (
+        <div>
+            <h1>SHOP NOW</h1>
+        </div>
+    )
 }
+
+
+export default Shop;
+
+
+
+
