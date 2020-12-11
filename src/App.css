@@ -1,93 +1,86 @@
-.App {
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: #455;
+  line-height: 1.5;
+  font-family: "Muli", sans-serif;
+  background-color: blueviolet;
+  background-image: url(./img/background.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 0 0;
+  background-attachment: fixed;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 800;
+}
+
+ul, ol {
+  padding-left: 40px;
+}
+
+h1 {font-size: 1.9em; }
+h2 { font-size: 1.7em; }
+h3 { font-size: 1.5em; }
+
+h1, h2, h3, h4, h5, h6, p, ul, ol, .featuredImage { margin-bottom: 20px; }
+
+li { margin-bottom: 10px;}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+  height: 60px;
+  line-height: 60px;
+  background: #1b93d7;
   text-align: center;
-  font-family: 'Playfair Display', serif;
-}
-
-
-
-
-
-/******************HOMEPAGE & NAVBAR*******************/
-
-.homepage {
-  background-image: url(./img/car1.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 95vh;
-  z-index: 8;
-}
-
-nav {
-  position: relative;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  min-width: 10vh;
-  height: 65px;
   color: #fff;
-  background-color: rgb(248, 165, 55);
-  box-shadow: 0 10px 10px 0 rgba(0, 0, 0, 0.31);
-  z-index: 10;
-} 
-
-
-.brand {
-  font-size: 80px;
-  font-weight: 700;
-  padding-top: 20px;
-  color: rgba(0, 0, 0, 0.884);
-  text-shadow: 0px 1px 0px rgb(253, 143, 0),
-                 0px 14px 10px rgba(0,0,0,0.15),
-                 0px 24px 2px rgba(0,0,0,0.1),
-                 0px 34px 30px rgba(0,0,0,0.1);
 }
 
-.nav-links {
-  width: 30%;
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  list-style: none;
-  font-size: 19px;
-  font-weight: 500;
+.wrapper {
+    width: 100%;
+    max-width: 900px;
+    padding: 0 10px;
+    margin: auto;
 }
 
-
-.links {
-  text-shadow: 0 1px 0 rgba(17, 17, 17, 0.308), 
-               0 4px 3px rgba(0,0,0,0.31);             
+.logo {
+  line-height: 60px;
+  font-size: 27px;
+  font-weight: 600;
 }
 
-
-
-
-/************************ABOUT PAGE********************/
-
-.about {
-  margin-top: 100px;
-  text-decoration: none;
-  color: #111;
+main .wrapper {
+  padding: 50px 15px;
 }
 
+.post {
+  padding: 20px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  box-shadow: 0px 2px 3px rgba(0,0,0,.13) ,1px 2px 2px rgba(0,0,0,.1) , -1px -2px 2px rgba(0,0,0,.05) ;
+}
 
+.post img {
+      display: block;
+      width: 100%;
+}
 
-
-
-
-
-
-
-
-
-
-
-/***********************SHOP PAGE*******************/
-
-.garage-container {
-  background-image: url(img/background2.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50vh;
+.title {
+  text-transform: uppercase;
+  font-size: 1.8em;
+  color: #f32e67;
 }
