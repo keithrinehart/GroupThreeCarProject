@@ -1,24 +1,17 @@
-import React from 'react';
-import '../App.css';
+import React from 'react'
 
 
 function Shop() {
- 
     return (
-      <div className="garage-container">
-        <div className="container">
-          <header>
-            <div className="wrapper">
-              <span>Cars</span>
-            </div>
-          </header>
-          <main>
-            <div className="wrapper"></div>
-          </main>
+        <div>
+            <h1>SHOP NOW</h1>
         </div>
-      </div>
     )
-  }
+}
 
-  export default Shop;
+
+export default Shop;
+
+
+
 
