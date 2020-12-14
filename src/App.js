@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import {Route, Switch, Redirect} from 'react-router-dom';
+import {Route, BrowserRouter as Router, Switch, Redirect} from 'react-router-dom';
 import {client} from './client';
 import Posts from './components/Posts';
 import Shop from './components/Shop';
@@ -32,11 +32,11 @@ class App extends React.Component {
                       <div className='wrapper'>
                       <Nav />
                         <Switch>
-                        <Route path="/" exact component={Home} />  
-                        <Route path="/About" component={About} />
-                        <Route path="/Shop" component={Shop} />
-                        <Route path="/Prices" component={Prices} />
-                        <Redirect to="/" /> 
+                          <Route path="/" exact component={Home} />  
+                          <Route path="/About" component={About} />
+                          <Route path="/Shop" component={Shop} />
+                          <Route path="/Prices" component={Prices} />
+                          <Redirect to="/" /> 
                         </Switch>
                       </div>
                   </header>
@@ -50,6 +50,12 @@ class App extends React.Component {
       );
   }
       
+}
+
+const Home = () => {
+  return(
+    <div className="homepage"></div>
+  );
 }
 
 export default App;
