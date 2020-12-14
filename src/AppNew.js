@@ -7,7 +7,7 @@ import Shop from './components/Shop';
 import Nav from './components/Nav';
 import About from './components/About';
 import Prices from './components/Prices';
-import Home from './Home';
+
 
 class App extends React.Component {
   state = {
