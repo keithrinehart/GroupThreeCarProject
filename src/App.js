@@ -1,8 +1,12 @@
 import React from 'react';
 import './App.css';
+import {Route, Switch, Redirect} from 'react-router-dom';
 import {client} from './components/client';
 import Posts from './components/Posts';
 import Shop from './components/Shop';
+import Nav from './components/Nav';
+import About from './components/About';
+import Prices from './components/Prices';
 
 class App extends React.Component {
   state = {
