@@ -1,17 +1,22 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import {client} from '../client';
+import Posts from './Posts';
 
 
-function Shop() {
+export default function Shop () {
+    const [articles, setArticles] = useState([]);
+    
+    useEffect(() => {
+        client
+          .getEntries()
+          .then((res) => setArticles(res.items))
+          .catch(() => console.log("Error"));
+    
+      }, []);
+
     return (
-        <div>
-            <h1>SHOP NOW</h1>
-        </div>
-    )
+        <div className='wrapper'>
+        <Posts posts={articles} />
+      </div>
+    );
 }
-
-
-export default Shop;
-
-
-
-
